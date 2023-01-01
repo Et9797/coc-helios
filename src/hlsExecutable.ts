@@ -31,7 +31,7 @@ function createHlsVenvPosix(): Path {
    }
 
    try {
-      execSync(`${pipPath} install -U pip jedi-language-server`);
+      execSync(`${pipPath} install -U pip helios-language-server`);
    } catch (e) {
       window.showErrorMessage(`Something went wrong installing ${hlsName} from PyPI.`);
       throw e;
