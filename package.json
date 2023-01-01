@@ -1,0 +1,68 @@
+{
+  "name": "coc-helios",
+  "version": "0.1.0",
+  "hlsName": "helios-language-server",
+  "hlsVersion": "0.1.0",
+  "description": "coc.nvim wrapper for helios-language-server",
+  "author": "et <et>",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "keywords": [
+    "coc.nvim",
+    "cardano",
+    "helios",
+    "lsp",
+    "neovim"
+  ],
+  "engines": {
+    "coc": "^0.0.80"
+  },
+  "scripts": {
+    "lint": "eslint src --ext ts",
+    "clean": "rimraf lib",
+    "watch": "node esbuild.js --watch",
+    "build": "node esbuild.js",
+    "prepare": "node esbuild.js"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "printWidth": 120,
+    "semi": true
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.0",
+    "@types/rimraf": "^3.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.13.0",
+    "coc.nvim": "^0.0.80",
+    "esbuild": "^0.14.24",
+    "eslint": "^8.10.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1",
+    "rimraf": "^3.0.2",
+    "typescript": "^4.6.2"
+  },
+  "activationEvents": [
+    "*"
+  ],
+  "contributes": {
+    "configuration": {
+      "type": "object",
+      "title": "coc-helios configuration",
+      "properties": {
+        "coc-helios.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable coc-helios extension"
+        }
+      }
+    },
+    "commands": [
+      {
+        "command": "coc-helios.Command",
+        "title": "coc-helios command title"
+      }
+    ]
+  }
+}
