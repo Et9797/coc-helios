@@ -13,7 +13,7 @@ type Path = string;
 
 
 function createHlsVenvPosix(): Path {
-	const venvPath = path.join(path.dirname(__dirname), '.venv');
+   const venvPath = path.join(path.dirname(__dirname), '.venv');
    const pipPath = path.join(venvPath, 'bin', 'pip');
    const hlsExecutablePath = path.join(venvPath, 'bin', hlsName);
 
