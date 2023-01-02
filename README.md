@@ -7,6 +7,7 @@ coc.nvim wrapper for <a href="https://github.com/et9797/helios-language-server">
 * `Python 3.10`
 * `python3-pip` (Ubuntu/Debian)
 * `python3-venv` (Ubuntu/Debian)
+* `filetype.nvim` plugin
 
 ## Installation
 
