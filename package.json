@@ -4,7 +4,7 @@
   "hlsName": "helios-language-server",
   "hlsVersion": "0.1.0",
   "description": "coc.nvim wrapper for helios-language-server",
-  "author": "et <et>",
+  "author": "et <etet1997@hotmail.com>",
   "license": "MIT",
   "main": "lib/index.js",
   "keywords": [
