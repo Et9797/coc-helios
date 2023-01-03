@@ -17,6 +17,10 @@
   "engines": {
     "coc": "^0.0.80"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/et9797/coc-helios.git"
+  },
   "scripts": {
     "lint": "eslint src --ext ts",
     "clean": "rimraf lib",
