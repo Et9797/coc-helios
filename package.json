@@ -1,8 +1,8 @@
 {
   "name": "coc-helios",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "hlsName": "helios-language-server",
-  "hlsVersion": "0.3.0",
+  "hlsVersion": "0.3.1",
   "description": "coc.nvim wrapper for helios-language-server",
   "author": "et <etet1997@hotmail.com>",
   "license": "MIT",
